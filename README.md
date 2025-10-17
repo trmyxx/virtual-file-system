@@ -1,20 +1,20 @@
 # Virtual File System (VFS)
 
-Это проект для симуляции файловой системы с возможностью создания файлов, директорий, их переименования и удаления.
+This project simulates a file system with the ability to create, rename, and delete files and directories.
 
-## Структура классов
-- **File**: Класс, представляющий файл.
-- **Directory**: Класс, представляющий директорию, которая может содержать файлы.
-- **FileSystem**: Класс для управления всей файловой системой.
+## Class Structure
+- **File**: Represents a file.
+- **Directory**: Represents a directory that can contain files.
+- **FileSystem**: Manages the entire file system.
 
-## Как использовать
+## How to Use
 
-1. Инициализируйте систему файлов через FileSystem::getInstance().
-2. Создавайте директории и файлы, добавляйте их в систему.
-3. Используйте методы для добавления/удаления файлов из директорий.
+1. Initialize the file system via `FileSystem::getInstance()`.
+2. Create directories and files, then add them to the system.
+3. Use the provided methods to add or remove files from directories.
 
-Пример:
-cpp
+Example:
+```cpp
 FileSystem* fs = FileSystem::getInstance();
 Directory* root = new Directory("root");
 fs->AddDirectory(nullptr, "root");
